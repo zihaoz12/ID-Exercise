@@ -1,1 +1,29 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+  --primary-color:#333;
+  --secondary-color:#7d7e7f;
+  --primary-font-color:#fff;
+  --overlay-color:rgba(0,0,0, 0.7);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body{
+  line-height: 1.6;
+  font-family: 'Raleway', sans-serif;
+}
+
+div{
+  box-sizing: border-box;
+}
+
+.container{
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  height: auto;
+}

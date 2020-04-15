@@ -1,0 +1,50 @@
+<section class="product-section">
+  <div class="container">
+      <a href="">Clothing </a> > <span>Outerwear</span>
+    <div class="product">
+      <div>
+        <img src="../../../../assets/image-assets/tough-mojo-jacket-img1.png" alt="">
+      </div>
+      <div>
+        <h2>Tough Mojo Jacket &reg;</h2>
+        <div>
+          <ul>
+            <li>300 grams of primaloft &reg; one insulation</li>
+            <li>schoeller &reg; microfiber shell</li>
+            <li>diagonal quilting</li>
+            <li>microfiber ripstop liner</li>
+            <li>zipper garage at collar</li>
+            <li>anchored bottom-hem adjusters</li>
+            <li>3-in-1 front pockets</li>
+            <li>zippered chest pocket</li>
+            <li>two interior zippered pockets</li>
+            <li>made in the philippines</li>
+          </ul>
+        </div>
+        <div class="product-option-group">
+          <div class="dropdown-btn">
+            <span>Select Size</span>
+            <input type="hidden">
+          </div>
+          <div class="dropdown-btn">
+            <span>Select Color</span>
+            <input type="hidden">
+          </div>
+        </div>
+        <div class="product-option-group">
+          <div class="product-quantity">
+            <span (click)="addQuantity()">+</span>
+            <input type="text" [value]="productQuantity">
+            <span (click)="reduceQuantity()">-</span>
+          </div>
+          <div class="submit-btn">
+            <input type="submit" value="Add to Cart">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<app-product-desc></app-product-desc>
+<app-product-review></app-product-review>

@@ -1,0 +1,32 @@
+
+.submenu-section{
+  background: #e8e9ea;
+}
+.sub-menu{
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  .sub-menu-btn{
+    padding:10px;
+    text-align: center;
+  }
+  .sub-menu-btn:hover{
+    .dropdown-submenu{
+      display: block;
+    }
+  }
+  .dropdown-submenu{
+    display: none;
+    position: absolute;
+    top:190px;
+    left: 350px;
+    z-index: 1;
+    background: white;
+    span{
+      display: block;
+
+    }
+  }
+}
+

@@ -1,0 +1,39 @@
+header{
+  background: black;
+  padding: 1rem 0;
+  .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  .nav{
+    display: flex;
+    flex-direction: row;
+    a{
+      margin: 5px;
+      color: var(--primary-font-color);
+      text-decoration: none
+    }
+  }
+
+  .header-section{
+    padding: 20px 0;
+    input[type=text]{
+      width: 100%;
+      padding: 5px;
+      box-shadow: none;
+      :focus{
+        outline: none;
+      }
+    }
+    button{
+      border: none;
+      margin-left: -2.5em;
+      cursor: pointer;
+    }
+  }
+}
