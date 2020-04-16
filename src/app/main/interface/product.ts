@@ -5,12 +5,12 @@ export interface Product {
   id:number;
   item_name:string;
   item_img:string;
-  item_details:[];
-  item_desc:[
+  item_details:any;
+  item_desc:
     ProductStory
-  ];
-  item_reviews:[
-    ProductReview
-  ]
+  ;
+  item_reviews:
+    ProductReview[]
+  ;
 
 }

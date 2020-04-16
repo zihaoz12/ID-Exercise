@@ -1,4 +1,4 @@
 export interface ProductStory {
   item_img:string;
-  item_desc:[];
+  item_desc:any;
 }
