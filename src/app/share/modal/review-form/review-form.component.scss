@@ -1,4 +1,7 @@
 
+:host{
+  display: none;
+}
 .backdrop{
   position: fixed;
   top: 0;
@@ -14,20 +17,41 @@
 }
 
 .modal-container {
-  min-width: 400px;
+  min-width: 600px;
   min-height: 200px;
-  max-width: 70%;
+  max-width: 80%;
   background-color: white;
-  padding: 10px;
-  input{
-    width: 70%;
+  padding: 20px;
+  float: left;
+  .review-form-header{
+    display: flex;
+    flex-direction: row;
+    div{
+      margin: 0 10px;
+    }
+    img:hover{
+      background-color: #508a99;
+    }
   }
-  display: block;
+  .review-title-group{
+    margin: 10px auto;
+    label{
+      display: inline-block;
+      margin: 0 5px;
+    }
+    input{
+      width: 81%;
+    }
+  }
+  textarea{
+    width: 98%;
+    padding: 5px;
+  }
 }
 
 
-.input[type=submit]{
-  background-color: #4CAF50;
+.review-submit-btn{
+  background-color: #508a99;
   color: white;
   padding: 12px 20px;
   border: none;

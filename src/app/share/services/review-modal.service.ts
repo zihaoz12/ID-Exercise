@@ -13,7 +13,7 @@ export class ReviewModalService {
       modal.style.display = 'block';
       document.getElementsByTagName('body')[0].style.overflow = 'hidden';
     }else{
-      console.warn(`cant't find modal element by id`)
+      console.log(`cant't find modal element by id`)
     }
   }
   hideModal(id){
@@ -23,7 +23,7 @@ export class ReviewModalService {
       modal.style.display = 'none';
       document.getElementsByTagName('body')[0].style.overflow = "auto";
     }else{
-      console.warn(`cant't find modal element by id`)
+      console.log(`cant't find modal element by id`)
     }
   }
 }
