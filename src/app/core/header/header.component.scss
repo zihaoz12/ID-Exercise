@@ -13,13 +13,13 @@ header{
   .nav{
     display: flex;
     flex-direction: row;
+    margin: 10px auto;
     a{
       margin: 5px;
       color: var(--primary-font-color);
       text-decoration: none
     }
   }
-
   .header-section{
     padding: 20px 0;
     input[type=text]{
@@ -35,5 +35,8 @@ header{
       margin-left: -2.5em;
       cursor: pointer;
     }
+  }
+  .tw-icon{
+    padding-top: 5px;
   }
 }

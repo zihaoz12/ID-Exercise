@@ -17,6 +17,6 @@ export class ProductReviewComponent implements OnInit {
 
   showModal(){
     console.log("Show Modal")
-    this.modalService.showModal('Hello-Modal')
+    this.modalService.showModal('ReviewForm-Modal')
   }
 }

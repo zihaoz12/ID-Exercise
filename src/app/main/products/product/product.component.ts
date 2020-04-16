@@ -20,7 +20,6 @@ export class ProductComponent implements OnInit {
   }
 
   reduceQuantity(){
-
     if(this.productQuantity > 1){
       this.productQuantity--;
     }else{

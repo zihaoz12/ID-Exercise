@@ -23,19 +23,21 @@
         </div>
         <div class="product-option-group">
           <div class="dropdown-btn">
-            <span>Select Size</span>
+            <span class="dro[down-select">Select Size</span>
             <input type="hidden">
+            <span class="dropdown-icon">&#9660;</span>
           </div>
           <div class="dropdown-btn">
-            <span>Select Color</span>
+            <span class="dropdown-select">Select Color</span>
             <input type="hidden">
+            <span class="dropdown-icon">&#9660;</span>
           </div>
         </div>
         <div class="product-option-group">
           <div class="product-quantity">
-            <span (click)="addQuantity()">+</span>
+            <span (click)="addQuantity()">&#9650;</span>
             <input type="text" [value]="productQuantity">
-            <span (click)="reduceQuantity()">-</span>
+            <span (click)="reduceQuantity()">&#9660;</span>
           </div>
           <div class="submit-btn">
             <input type="submit" value="Add to Cart">

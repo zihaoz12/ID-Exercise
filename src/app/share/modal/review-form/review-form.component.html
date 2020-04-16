@@ -1,13 +1,28 @@
 <div class="backdrop">
     <div class="modal-container">
-        <h5>Please Rate the Tough Mojo Jacket </h5>
-        <form action="">
-            <label for="review-title">Review Title: </label>
-            <input type="text"  name="review-title">
-            <textarea name="" id="" cols="50" rows="10" placeholder="- Write your review here-"></textarea>
-            <div >
-                <input class="review-submit-btn" (click)="hideModal($event)" type="submit" value="Submit Review">
-            </div>
-        </form>
+      <div class="review-form-header">
+        <div>
+            <h3>Please Rate the Tough Mojo Jacket </h3>
+        </div>
+        <div>
+            <img src="../../../../assets/image-assets/star.png" alt="">
+            <img src="../../../../assets/image-assets/star.png" alt="">
+            <img src="../../../../assets/image-assets/star.png" alt="">
+            <img src="../../../../assets/image-assets/star.png" alt="">
+            <img src="../../../../assets/image-assets/star.png" alt="">
+        </div>
+      </div>
+          <form action="submit">
+              <div class="review-title-group">
+                  <label for="review-title">Review Title: </label>
+                  <input type="text"  name="review-title">
+              </div>
+              <div class="reviwe-text-group">
+                  <textarea name="review-text" id="review-text" rows="10" placeholder="- Write your review here-"></textarea>
+              </div>
+              <div class="submit-review-group">
+                  <input class="review-submit-btn" (click)="hideModal($event)" type="submit" value="Submit Review">
+              </div>
+          </form>
     </div>
 </div>
