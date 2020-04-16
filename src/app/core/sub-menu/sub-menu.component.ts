@@ -15,7 +15,7 @@ export class SubMenuComponent implements OnInit {
   ) { }
 
   showSubmenu(i) {
-    console.log('show');
+    console.log('show submenu');
     this.menuList = this.menuList.map((menu, index) => {
       if (i === index) {
         menu.showSub = true;

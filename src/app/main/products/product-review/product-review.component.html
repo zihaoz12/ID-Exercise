@@ -9,40 +9,25 @@
   </div>
 
   <div class="container">
-    <div class="review">
-      <div class="reviewer">
-        <img src="../../../../assets/image-assets/reviewer1.png" alt="">
-        <p>Shaun White<p>
-      </div>
-      <div class="review-text">
-        <div class="review-title">
-          <h3>This Thing is a monster!</h3>
-          <p>08/20/2013</p>
-          <img src="../../../../assets/image-assets/star.png" alt="">
-          <img src="../../../../assets/image-assets/star.png" alt="">
-          <img src="../../../../assets/image-assets/star.png" alt="">
-          <img src="../../../../assets/image-assets/star.png" alt="">
-        </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit deleniti officia alias odit aliquid magni aperiam nisi eius dolore dolor incidunt quis excepturi iure neque, quod in suscipit, vel eligendi beatae sequi reiciendis repudiandae! Quia, laudantium quisquam. Laudantium maxime officiis quia quasi nemo. Nemo temporibus quibusdam distinctio iusto. Rem velit animi veritatis consequuntur distinctio deleniti! Mollitia vel incidunt earum quidem eligendi repellat consectetur omnis molestiae enim quam autem, ipsa quia rerum ducimus dolores! Unde provident repellat numquam doloremque, tempore voluptate.</p>
-      </div>
-    </div>
-    <div class="review">
+    <div class="review" *ngFor="let review of productReview">
         <div class="reviewer">
-          <img src="../../../../assets/image-assets/reviewer2.png" alt="">
-          <p>Jennie Loren<p>
+          <img src={{review.reviewers_img}} alt="">
+          <p>{{review.reviewers_name}}<p>
         </div>
         <div class="review-text">
           <div class="review-title">
-            <h3>Luv it so much I bought 2!</h3>
-            <p>01/12/2013</p>
+            <h3>{{review.review_title}}</h3>
+            <p>{{review.review_date}}</p>
+            <p>{{review.review_rating}}</p>
             <img src="../../../../assets/image-assets/star.png" alt="">
             <img src="../../../../assets/image-assets/star.png" alt="">
             <img src="../../../../assets/image-assets/star.png" alt="">
           </div>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam ratione nihil id dignissimos rerum distinctio, nam quia esse ducimus qui consectetur suscipit magnam unde deleniti hic maxime velit. Aperiam debitis necessitatibus ducimus nostrum dolores amet maiores laboriosam corrupti hic enim!</p>
+        <p>{{review.review_text}}</p>
         </div>
       </div>
   </div>
+
 </section>
 
 

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { ReviewModalService } from 'src/app/share/services/review-modal.service';
 
 @Component({
@@ -8,11 +8,13 @@ import { ReviewModalService } from 'src/app/share/services/review-modal.service'
 })
 export class ProductReviewComponent implements OnInit {
 
+  @Input() productReview:any
   constructor(
     private modalService: ReviewModalService
   ) { }
 
   ngOnInit(): void {
+    console.log(this.productReview)
   }
 
   showModal(){

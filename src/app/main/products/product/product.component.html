@@ -3,22 +3,13 @@
       <a href="">Clothing </a> > <span>Outerwear</span>
     <div class="product">
       <div>
-        <img src="../../../../assets/image-assets/tough-mojo-jacket-img1.png" alt="">
+        <img src={{product.item_img}} alt="product_img">
       </div>
       <div>
-        <h2>Tough Mojo Jacket &reg;</h2>
+        <h2>{{product.item_name}}&reg;</h2>
         <div>
           <ul>
-            <li>300 grams of primaloft &reg; one insulation</li>
-            <li>schoeller &reg; microfiber shell</li>
-            <li>diagonal quilting</li>
-            <li>microfiber ripstop liner</li>
-            <li>zipper garage at collar</li>
-            <li>anchored bottom-hem adjusters</li>
-            <li>3-in-1 front pockets</li>
-            <li>zippered chest pocket</li>
-            <li>two interior zippered pockets</li>
-            <li>made in the philippines</li>
+            <li *ngFor="let item of product.item_details">{{item}}</li>
           </ul>
         </div>
         <div class="product-option-group">
@@ -48,5 +39,5 @@
   </div>
 </section>
 
-<app-product-desc></app-product-desc>
-<app-product-review></app-product-review>
+<app-product-desc [productStory]="product.item_desc"></app-product-desc>
+<app-product-review [productReview]="product.item_reviews"></app-product-review>

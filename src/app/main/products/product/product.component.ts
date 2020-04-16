@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductService } from '../../services/product.service';
 
 @Component({
   selector: 'app-product',
@@ -9,9 +10,20 @@ export class ProductComponent implements OnInit {
 
   productQuantity = 1;
 
-  constructor() { }
+  product:any;
+
+  constructor(
+    private productService: ProductService
+  ) { }
 
   ngOnInit(): void {
+    this.productService.getProduct().subscribe( data=>{
+      this.product = data;
+      console.log(this.product)
+    }
+
+
+    )
   }
 
 
